@@ -1,0 +1,99 @@
+*{
+    font-family: 'Roboto',sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+.photo-link{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    display: block;
+    overflow: hidden;
+    border: 1px solid black;
+    margin: 35px auto;
+}
+
+.photo-link img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+section{
+    margin-bottom: 20px;
+    padding: 0 10%;
+}
+
+section h2{
+    margin-bottom: 5px;
+}
+
+.personal-info p::first-letter{
+    color:red;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.personal-info hr{
+    background-color: red;
+    border: none; 
+    height: 2px;
+}
+
+.work-experience ul {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.work-experience ul li
+{
+    position: relative;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.work-experience ul li::before {
+    content: "•";
+    font-weight: bold;
+    position: absolute;
+    left: -20px;
+    top: 0;
+}
+
+.work-experience ul li ul li::before {
+    content: "→"; 
+    color: #964b00; 
+    left: -20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .contact-item a {
+    text-decoration: none;
+    color: #666;
+    font-size: 16px;
+    margin-left: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  .contact-item a:hover {
+    color: #3498db; /* Hover effect for text */
+    transform: scale(1.05);
+  }
+  .contact-item svg {
+    width: 24px;
+    height: 24px;
+    fill: #666; /* Default color for icons */
+    transition: fill 0.3s ease, transform 0.3s ease;
+  }
+  .contact-item a:hover svg {
+    fill: #3498db; /* Hover effect for icons */
+  }
