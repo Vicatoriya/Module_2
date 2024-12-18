@@ -75,25 +75,26 @@ section h2{
     display: flex;
     align-items: center;
     margin-bottom: 15px;
-  }
+}
 
-  .contact-item a {
+.contact-item a {
     text-decoration: none;
     color: #666;
-    font-size: 16px;
-    margin-left: 10px;
     transition: color 0.3s ease, transform 0.3s ease;
-  }
-  .contact-item a:hover {
-    color: #3498db; /* Hover effect for text */
+    margin-right: 7px;
+}
+
+.contact-item a:hover {
+    color: #3498db;
     transform: scale(1.05);
-  }
-  .contact-item svg {
+}
+
+.contact-item svg {
     width: 24px;
     height: 24px;
-    fill: #666; /* Default color for icons */
+    fill: #666;
     transition: fill 0.3s ease, transform 0.3s ease;
-  }
-  .contact-item a:hover svg {
-    fill: #3498db; /* Hover effect for icons */
-  }
+}
+.contact-item a:hover svg {
+    fill: #3498db;
+}
