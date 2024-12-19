@@ -1,11 +1,13 @@
-*{
-    font-family: 'Roboto',sans-serif;
-    margin: 0;
-    padding: 0;
+h2
+{
+    font-size: 25px;
+    font-weight: bold;
+    color: #254611;
 }
 
 p{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    color:#111166;
 }
 
 .photo-link{
@@ -14,7 +16,7 @@ p{
     height: 300px;
     display: block;
     overflow: hidden;
-    border: 1px solid black;
+    border: 1px solid #000000;
     margin: 35px auto;
 }
 
@@ -30,71 +32,101 @@ section{
 }
 
 section h2{
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .personal-info p::first-letter{
-    color:red;
+    color:#ee99ff;
     font-size: 1.4em;
     font-weight: bold;
 }
 
-.personal-info hr{
-    background-color: red;
-    border: none; 
-    height: 2px;
+.personal-info p::first-line{
+    color:#ff0000;
 }
 
 .work-experience ul {
     list-style: none;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .work-experience ul li
 {
     position: relative;
     margin-top: 10px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    color:#771199;
 }
 
 .work-experience ul li::before {
-    content: "•";
+    content: "\2605 "; /* Звезда */
+    color: #ffd700;
     font-weight: bold;
     position: absolute;
-    left: -20px;
+    left: -30px;
     top: 0;
 }
 
 .work-experience ul li ul li::before {
     content: "→"; 
-    color: #964b00; 
-    left: -20px;
+    color: #daa520; 
+    left: -30px;
 }
 
 .contact-item {
-    display: flex;
-    align-items: center;
     margin-bottom: 15px;
+    display: inline-block;
+    display: flex;
 }
 
 .contact-item a {
     text-decoration: none;
-    color: #666;
+    color: #666666;
     transition: color 0.3s ease, transform 0.3s ease;
-    margin-right: 7px;
+    margin-right: 8px;
+    font-size: 1.2rem;
 }
 
 .contact-item a:hover {
     color: #3498db;
-    transform: scale(1.05);
+    text-decoration: underline;
 }
 
 .contact-item svg {
     width: 24px;
     height: 24px;
-    fill: #666;
+    fill: #666666;
     transition: fill 0.3s ease, transform 0.3s ease;
 }
 .contact-item a:hover svg {
     fill: #3498db;
+}
+
+.uppercase{
+    text-transform:uppercase;
+}
+
+.lowercase
+{
+    text-transform: lowercase;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.letter-spaced{
+    letter-spacing: 2px;
+}
+
+.word-spaced{
+    word-spacing: 10px;
+}
+
+.personal-info p{
+    text-align: center;
+}
+
+.backgrounded{
+    background-color: #bc8f8f;
 }
