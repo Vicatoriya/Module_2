@@ -75,49 +75,31 @@ section h2{
 
 .contact-item {
     margin-bottom: 15px;
-<<<<<<< HEAD
     display: inline-block;
     display: flex;
-=======
->>>>>>> 9f34c20 (fix:update margins)
 }
 
 .contact-item a {
     text-decoration: none;
-<<<<<<< HEAD
     color: #666666;
     transition: color 0.3s ease, transform 0.3s ease;
     margin-right: 8px;
     font-size: 1.2rem;
-=======
-    color: #666;
-    transition: color 0.3s ease, transform 0.3s ease;
-    margin-right: 7px;
->>>>>>> 9f34c20 (fix:update margins)
 }
 
 .contact-item a:hover {
     color: #3498db;
-<<<<<<< HEAD
     text-decoration: underline;
-=======
-    transform: scale(1.05);
->>>>>>> 9f34c20 (fix:update margins)
 }
 
 .contact-item svg {
     width: 24px;
     height: 24px;
-<<<<<<< HEAD
     fill: #666666;
-=======
-    fill: #666;
->>>>>>> 9f34c20 (fix:update margins)
     transition: fill 0.3s ease, transform 0.3s ease;
 }
 .contact-item a:hover svg {
     fill: #3498db;
-<<<<<<< HEAD
 }
 
 .uppercase{
@@ -147,6 +129,4 @@ section h2{
 
 .backgrounded{
     background-color: #bc8f8f;
-=======
->>>>>>> 9f34c20 (fix:update margins)
 }
