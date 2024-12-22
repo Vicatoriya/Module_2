@@ -1,8 +1,19 @@
-h2
-{
+@font-face {
+    font-family: 'Raleway';
+    src: url(assets/fonts/Raleway-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+    font-family:'Raleway';
+}
+
+h2{
     font-size: 25px;
     font-weight: bold;
     color: #254611;
+    margin-bottom: 15px;
 }
 
 p{
@@ -20,24 +31,15 @@ p{
     margin: 35px auto;
 }
 
-.photo-link img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-
 section{
     margin-bottom: 20px;
     padding: 0 10%;
 }
 
-section h2{
-    margin-bottom: 15px;
-}
-
 .personal-info p::first-letter{
     color:#ee99ff;
     font-size: 1.4em;
+    text-decoration:underline;
     font-weight: bold;
 }
 
@@ -59,31 +61,28 @@ section h2{
 }
 
 .work-experience ul li::before {
-    content: "\2605 "; /* Звезда */
+    content: "\2605"; /* Звезда */
     color: #ffd700;
-    font-weight: bold;
     position: absolute;
+    font-weight: bold;
     left: -30px;
     top: 0;
 }
 
 .work-experience ul li ul li::before {
-    content: "→"; 
+    content: '♦'; 
     color: #daa520; 
-    left: -30px;
 }
 
 .contact-item {
     margin-bottom: 15px;
-    display: inline-block;
     display: flex;
 }
 
 .contact-item a {
     text-decoration: none;
     color: #666666;
-    transition: color 0.3s ease, transform 0.3s ease;
-    margin-right: 8px;
+    margin-left: 8px;
     font-size: 1.2rem;
 }
 
@@ -96,14 +95,15 @@ section h2{
     width: 24px;
     height: 24px;
     fill: #666666;
-    transition: fill 0.3s ease, transform 0.3s ease;
+    transition: fill 0.5s ease;
 }
-.contact-item a:hover svg {
+
+.contact-item svg:hover {
     fill: #3498db;
 }
 
 .uppercase{
-    text-transform:uppercase;
+    text-transform: uppercase;
 }
 
 .lowercase
@@ -128,5 +128,5 @@ section h2{
 }
 
 .backgrounded{
-    background-color: #bc8f8f;
+    background-color: #bc8fee;
 }
