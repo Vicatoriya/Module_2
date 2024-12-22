@@ -1,0 +1,38 @@
+table{
+  border-collapse: collapse;
+  border: 2px solid #000000;
+  margin:  50px auto;
+  width: 600px;
+  height: 400px;
+  overflow: scroll;
+  display: block;
+}
+
+td, th{
+  border: 1px solid #000000;
+  padding: 10px 20px;
+}
+
+th{
+  background-color: #159fb4;
+  font-weight: normal;
+  font-style: italic;
+}
+
+tr td:first-child{
+  text-align: right;     
+  font-weight: bold;   
+}
+
+tfoot td {
+  font-weight: bold;
+  font-style: italic;
+}
+
+tbody td{
+  box-sizing: border-box;
+  max-width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

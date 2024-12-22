@@ -3,9 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Table&Form</title>
+    <meta name="keywords" content="Table,form">
+    <meta name="description" content="HTML table and form">
+    <link rel="stylesheet" href=
+    "https://necolas.github.io/normalize.css/7.0.0/normalize.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+  <table>
+    <caption>Some table</caption>
+    <thead>
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Body Cell 1</td>
+        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus libero veniam temporibus repellendus saepe nulla? Cupiditate ad reiciendis, corporis hic porro amet illum obcaecati, corrupti deleniti accusantium, assumenda doloremque sint.</td>
+        <td rowspan="2">Body Cell 3</td>
+      </tr>
+      <tr>
+        <td >Body Cell 4</td>
+        <td >Body Cell 5 Lore</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Footer 1</td>
+        <td colspan="2">Footer 2</td>
+      </tr>
+    </tfoot>
+  </table>
 </body>
 </html>
