@@ -36,3 +36,47 @@ tbody td{
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+
+
+form{
+  margin: 50px auto;
+  max-width: 600px;
+}
+
+input:focus{
+  outline: 1px solid #ffff11;
+  caret-color: #ffff11; 
+}
+
+label{
+  display: block;
+  margin: 8px 0;
+}
+
+textarea {
+  resize: horizontal; 
+  height: 100px;
+  max-width: 560px;
+}
+
+#optional-field{
+  background-color: #9598ff;
+}
+
+#optional-field:hover{
+  cursor: pointer;
+}
+
+button{
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+::placeholder{
+  color: #888888;
+}
