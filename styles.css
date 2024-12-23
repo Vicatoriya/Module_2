@@ -54,6 +54,7 @@ section{
 
 .work-experience ul {
     list-style: none;
+    margin-left: 30px;
 }
 
 .work-experience ul li
