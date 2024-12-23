@@ -111,10 +111,6 @@ section{
     text-transform: lowercase;
 }
 
-.bold{
-    font-weight: bold;
-}
-
 .letter-spaced{
     letter-spacing: 2px;
 }
