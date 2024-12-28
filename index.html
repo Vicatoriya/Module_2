@@ -3,9 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="keywords" content="Navigation,flex,hamburger-button">
+    <meta name="description" content="Flexible navigation">
+    <title>Navigation</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <header>
+        <a href="/">
+            <img src="assets/images/logo.png" alt="Brand logo">
+            <span>Brand Name</span>
+        </a>
+        <input class="menu-button" type="checkbox" id="menu-button" name="menu-button" />
+        <label class="menu-icon" for="menu-button">
+          <span class="nav-icon"></span>
+        </label>
+        <nav class="menu">
+            <a class="nav-item"  href="#">Home</a>
+            <a class="nav-item" href="#">About</a>
+            <a class="nav-item" href="#">Services</a>
+            <a class="nav-item" href="#">Contact</a>
+        </nav>
+        <img src="assets/images/user.png" alt="Avatar">
+    </header>
 </body>
 </html>

@@ -1,0 +1,105 @@
+a{
+  text-decoration:none;
+  color:black;
+}
+
+header img {
+  height: 40px;
+}
+
+header{
+  font-size: 1.4rem;
+  display: flex;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 20px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  gap:30px;
+}
+
+#menu-button{
+  position: absolute;
+  top: -100%;
+  left: -100%;;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media (max-width:750px){
+
+  a span{
+    display: none;
+  }
+  .menu-icon{
+    display: block;
+  }
+
+  nav{
+    position: absolute;
+    top:60px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    gap: 0;
+    visibility: hidden;
+  }
+
+  .menu-icon {
+    cursor: pointer;
+    margin: auto;
+    padding: 6px 0;
+  }
+
+  .nav-item{
+    margin-top: 40px;
+    text-align: center;
+  }
+  .nav-icon {
+    display: block;
+    background: #333;
+    height: 2px;
+    width: 18px;
+    position: relative;
+  }
+  .nav-icon:before {
+    top: 6px;
+  }
+  .nav-icon:after {
+    top: -6px;
+  }
+  .nav-icon:before,
+  .nav-icon:after {
+    background: #333;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    transition: all 0.2s ease-out;
+  }
+  .menu-button:checked ~ .menu{
+    visibility: visible;
+  }
+  .menu-button:checked ~ .menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+  }
+  .menu-button:checked ~ .menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+  }
+  .menu-button:checked ~ .menu-icon .nav-icon:before,
+  .menu-button:checked ~ .menu-icon .nav-icon:after {
+    top: 0;
+  }
+
+  .menu-button:checked ~ .menu-icon .nav-icon{
+    background:transparent;
+  }
+}
