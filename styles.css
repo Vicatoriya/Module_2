@@ -20,6 +20,7 @@ th{
 }
 
 tr td:first-child{
+  background-color: #159fb4;
   text-align: right;     
   font-weight: bold;   
 }
@@ -46,7 +47,7 @@ form{
 
 input:focus{
   outline: 1px solid #ffff11;
-  caret-color: #ffff11; 
+  caret-color: #ef0000; 
 }
 
 label{
