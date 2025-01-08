@@ -6,7 +6,7 @@
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  animation: cardAppear 1s forwards;
+  animation: cardAppear 1s both;
   transition: transform 0.3s ease, opacity 0.3s ease,background-color 0.3s ease;
 }
 
@@ -22,8 +22,7 @@
 
 .card img {
   height: 200px;
-  opacity: 0;
-  animation: imageAppear 2s 1s forwards;
+  animation: imageAppear 2s 1s both;
 }
 
 .card-content {
